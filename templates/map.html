@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayZen Map</title>
+    <!-- Mapbox CSS-->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+    <!--My CSS-->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/map.css')}}">
+    <!-- Mapbox Search Box CSS-->
+    <link href="https://api.mapbox.com/search-js/v1.0.0/web.css" rel="stylesheet">
+    <!-- Mapbox Direction CSS-->
+    <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" rel="stylesheet">
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div id="searchcontain">
+        <mapbox-search-box id="searchbox"></mapbox-search-box>
+    </div>
+
+    <!-- Mapbox JS-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <!-- Mapbox Search Box JS -->
+    <script src="https://api.mapbox.com/search-js/v1.0.0/web.js"></script>
+    <!-- Mapbox Direction JS-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+    <!--My JS-->
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>

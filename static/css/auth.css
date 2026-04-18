@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Ethnic";
+  src: url("../assets/EthnicSymphony.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bubble";
+  src: url("../assets/AgtirBubble.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gayen";
+  src: url("../assets/Gayen.ttf") format("truetype");
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,body{
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  background:#0B0F1A
+}
+svg{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100vw;
+  height:100vh;
+  z-index: 0;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 15, 26, 0.65); /* ← curtain darkness */
+  backdrop-filter: blur(1px);          /* ← soft premium blur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.Login, .Signup{
+  position: relative;
+  z-index: 2;
+  width: 380px;
+  padding: 32px 28px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.logo img{
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(120, 108, 222, 0.4));
+}
+
+.logo .name{
+  color: aliceblue;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Gayen';
+  line-height: 1;
+}
+.title{
+  font-size: 18px;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 24px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.input label {
+  font-size: 13px;
+  color: #a0a8c0;
+}
+.input input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+.input input::placeholder {
+  color: #555e7a;
+}
+.input input:focus {
+  border-color: rgba(108, 99, 255, 0.6);
+}
+.login-btn {
+  width: 100%;
+  padding: 11px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #6C63FF, #00C9A7);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.login-btn:hover {
+  opacity: 0.88;
+}
+.sign-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #7a829e;
+}
+
+.sign-text a {
+  color: #6C63FF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sign-text a:hover {
+  text-decoration: underline;
+}

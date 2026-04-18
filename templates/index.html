@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}WayZen{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">{% endblock %}
+{% block body %}
+    <div class="navbar">
+        <div class="logo">
+            <img src="{{url_for('static',filename='assets/WeyZen_icon.png')}}" alt="WayWen logo">
+            <span class="name">WayZen</span> <!--not p because p is block ele and will start on a new line span is inline ele-->
+        </div>
+
+        <div class="midlinks">
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="auth">
+            <div class="login">
+                <a href="{{url_for('login')}}">login</a>
+            </div>
+            <div class="signup">
+                <a href="{{url_for('signup')}}">Sign Up</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="hero">
+        <h1>WayZen</h1>
+        <p>Find your Way, Effortlessly</p>
+        <a href="{{url_for('map_page')}}" class="explore-btn">Explore Map</a>
+    </div>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+{% endblock %}

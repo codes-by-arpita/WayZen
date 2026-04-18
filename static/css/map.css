@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+#map{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100vw;
+  height:100vh;
+}
+
+#searchcontain{
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  z-index: 10;
+}
+
+/* Make the search input fill the container */
+#searchbox{
+  width: 100%;
+}

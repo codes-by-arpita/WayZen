@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Ethnic";
+  src: url("../assets/EthnicSymphony.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bubble";
+  src: url("../assets/AgtirBubble.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gayen";
+  src: url("../assets/Gayen.ttf") format("truetype");
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,body{
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  background:#0B0F1A
+}
+svg{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100vw;
+  height:100vh;
+}
+/* navbar*/
+.navbar{
+  position:fixed;
+  height: 70px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  padding:0 24px; /* so that elements don't stick to the edges*/
+  z-index: 1000;
+
+  background: rgba(11,15,26,0.9);
+  /* backdrop-filter: blur(1px);  Instead of blurring the navbar itself, it blurs whatever is behind it.So the map under the navbar becomes softly blurred */
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.name{
+  margin-left: 4px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #e6edf3;
+  font-family: Gayen;
+}
+.midlinks{
+  margin-left: 110px;
+}
+.midlinks a{
+  color: #b8a1e3;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  transition: opacity 0.2s ease;
+}
+.midlinks a:hover{
+  opacity: 0.7;
+}
+
+.auth{
+  display: flex;
+  gap:12px;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.login a{
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid rgba(238, 224, 224, 0.5);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-right:15px;
+}
+.signup a{
+  text-decoration: none;
+  background: #9b5de5;
+  border: none;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #E6EAF2;
+}
+
+.hero h1{
+  font-family: Gayen;
+    font-size: 70px;
+    font-weight: bolder;
+    background: linear-gradient(90deg, #8B7CFF, #d2b48c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    font-size: 30px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 900;
+}
+.explore-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    font-size:18px;
+    text-decoration:none;
+    color:white;
+    border-radius:30px;
+    background:linear-gradient(90deg,#8B7CFF,#d2b48c);
+    transition:0.3s;
+}
+
+.explore-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(106,76,255,0.4);
+}
